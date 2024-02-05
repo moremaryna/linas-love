@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="112dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/img512x512"/>
+
+        <TextView
+            android:id="@+id/about_project_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/app_logo"
+            android:layout_marginTop="89dp"
+            android:text="@string/about_project"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/about_project_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/about_project_title">
+            <TextView
+                android:id="@+id/about_project_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/about_project_app_photo"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/about_project_app_photo"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/about_project_text1"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/about_project_app_photo"
+                android:layout_width="94dp"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/lina_kostenko"
+                android:src="@drawable/linyna_lubov_logo" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/about_project_agency"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/about_project_full">
+            <TextView
+                android:id="@+id/about_project_part1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/about_project_agency_photo"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/about_project_agency_photo"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/about_project_text2"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/about_project_agency_photo"
+                android:layout_width="94dp"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/about_project"
+                android:src="@drawable/la_logo" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/agency_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_project_agency"
+            android:padding="16dp"
+            android:text="@string/about_project_website"
+            android:textColor="#818181"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/agency_www"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/agency_more"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="agency_www"
+            android:padding="16dp"
+            android:text="@string/go_to_website"/>
+    </RelativeLayout>
+</ScrollView>

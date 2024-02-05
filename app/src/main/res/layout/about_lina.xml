@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="112dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/img512x512" />
+
+        <TextView
+            android:id="@+id/about_lina_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/app_logo"
+            android:layout_marginTop="89dp"
+            android:text="@string/about_lina"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/andrukhovych_quote_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/about_lina_title">
+            <TextView
+                android:id="@+id/andrukhovych_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/andrukhovych_photo"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/andrukhovych_photo"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/andrukhovych_quote"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/andrukhovych_photo"
+                android:layout_width="94dp"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/andrukhovych_name"
+                android:src="@drawable/andrukhovych"/>
+
+            <TextView
+                android:id="@+id/andrukhovych_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/andrukhovych_photo"
+                android:layout_below="@+id/andrukhovych_photo"
+                android:layout_toStartOf="@+id/andrukhovych_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:text="@string/andrukhovych_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/andrukhovych_name"
+                android:layout_toStartOf="@+id/andrukhovych_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="24dp"
+                android:text="@string/andrukhovych_title" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/kononenko_quote_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/andrukhovych_quote_full">
+            <TextView
+                android:id="@+id/kononenko_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/kononenko_photo"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/kononenko_photo"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/kononenko_quote"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/kononenko_photo"
+                android:layout_width="94dp"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/kononenko_name"
+                android:src="@drawable/kononenko" />
+
+            <TextView
+                android:id="@+id/kononenko_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/kononenko_photo"
+                android:layout_below="@+id/kononenko_photo"
+                android:layout_toStartOf="@+id/kononenko_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:text="@string/kononenko_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/kononenko_name"
+                android:layout_toStartOf="@+id/kononenko_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="24dp"
+                android:text="@string/kononenko_title" />
+
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/stus_quote_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/kononenko_quote_full">
+            <TextView
+                android:id="@+id/stus_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/stus_photo"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/stus_photo"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/stus_quote"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/stus_photo"
+                android:layout_width="94dp"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/stus_name"
+                android:src="@drawable/stus" />
+            <TextView
+                android:id="@+id/stus_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/stus_photo"
+                android:layout_below="@+id/stus_photo"
+                android:layout_toStartOf="@+id/stus_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:text="@string/stus_name"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stus_name"
+                android:layout_toStartOf="@+id/stus_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="24dp"
+                android:text="@string/stus_title" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/drozdovsky_quote_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/stus_quote_full">
+            <TextView
+                android:id="@+id/drozdovsky_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/drozdovsky_photo"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/drozdovsky_photo"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/drozdovsky_quote"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/drozdovsky_photo"
+                android:layout_width="94dp"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/drozdovsky_name"
+                android:src="@drawable/dz" />
+            <TextView
+                android:id="@+id/drozdovsky_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/drozdovsky_photo"
+                android:layout_below="@+id/drozdovsky_photo"
+                android:layout_toStartOf="@+id/drozdovsky_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:text="@string/drozdovsky_name"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/drozdovsky_name"
+                android:layout_toStartOf="@+id/drozdovsky_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="24dp"
+                android:text="@string/drozdovsky_title" />
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pashko_quote_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/drozdovsky_quote_full">
+            <TextView
+                android:id="@+id/pashko_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/pashko_photo"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/pashko_photo"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/pashko_quote"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/pashko_photo"
+                android:layout_width="94dp"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/pashko_name"
+                android:src="@drawable/pashko" />
+            <TextView
+                android:id="@+id/pashko_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pashko_photo"
+                android:layout_below="@+id/pashko_photo"
+                android:layout_toStartOf="@+id/pashko_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:text="@string/pashko_name"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pashko_name"
+                android:layout_toStartOf="@+id/pashko_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="24dp"
+                android:text="@string/pashko_title" />
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dziuba_quote_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pashko_quote_full">
+            <TextView
+                android:id="@+id/dziuba_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dziuba_photo"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/dziuba_photo"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/dziuba_quote"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/dziuba_photo"
+                android:layout_width="94dp"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/dziuba_name"
+                android:src="@drawable/dziuba" />
+            <TextView
+                android:id="@+id/dziuba_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/dziuba_photo"
+                android:layout_below="@+id/dziuba_photo"
+
+                android:layout_toStartOf="@+id/dziuba_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:text="@string/dziuba_name"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/dziuba_name"
+                android:layout_toStartOf="@+id/dziuba_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="24dp"
+                android:text="@string/dziuba_title" />
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pakhlovska_quote_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dziuba_quote_full">
+            <TextView
+                android:id="@+id/pakhlovska_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/pakhlovska_photo"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/pakhlovska_photo"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/pakhlovska_quote"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/pakhlovska_photo"
+                android:layout_width="94dp"
+                android:layout_height="104dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/pakhlovska_name"
+                android:src="@drawable/pakholska" />
+            <TextView
+                android:id="@+id/pakhlovska_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pakhlovska_photo"
+                android:layout_below="@+id/pakhlovska_photo"
+
+                android:layout_toStartOf="@+id/pakhlovska_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp"
+                android:text="@string/pakhlovska_name"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/pakhlovska_name"
+                android:layout_toStartOf="@+id/pakhlovska_quote"
+                android:paddingEnd="0dp"
+                android:paddingStart="24dp"
+                android:text="@string/pakhlovska_title" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pakhlovska_quote_full"
+            android:padding="16dp"
+            android:text="@string/about_lina_disclaimer"
+            android:textColor="#818181"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+</ScrollView>
